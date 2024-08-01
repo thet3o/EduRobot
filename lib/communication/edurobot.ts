@@ -48,6 +48,9 @@ export class EduRobot {
                     this.delay(this.one_cm_in_ms*arg);
                 }
                 res = await this.communication.sendCommand("move", Method.POST, {"direction": Direction.STOP});
+        }else{
+            res = await this.communication.sendCommand("move", Method.POST, {"direction": direction});
+            this.delay(arg);
         }
         return (res?.status != undefined)? res?.status : '000';
     }
