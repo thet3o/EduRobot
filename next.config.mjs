@@ -3,6 +3,7 @@ import withSerwistInit from "@serwist/next";
 const withSerwist = withSerwistInit({
   // Note: This is only an example. If you use Pages Router,
   // use something else that works, such as "service-worker/index.ts".
+  cacheOnFrontEndNav: true,
   swSrc: "app/sw.ts",
   swDest: "public/sw.js",
   reloadOnOnline: true,
@@ -10,5 +11,6 @@ const withSerwist = withSerwistInit({
 
 export default withSerwist({
   output: 'export',
+  reactStrictMode: true,
   basePath: "/EduRobot",
 });

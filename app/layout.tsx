@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  manifest: "/manifest.json",
+  manifest: "/EduRobot/manifest.json",
   title: "EduRobot",
   description: "This is the controller for EduRobot",
 };
