@@ -9,6 +9,5 @@ const withSerwist = withSerwistInit({
 
 export default withSerwist({
   output: 'export',
-  reactStrictMode: true,
   basePath: "/EduRobot",
 });
