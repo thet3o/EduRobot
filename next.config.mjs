@@ -9,5 +9,6 @@ const withSerwist = withSerwistInit({
 });
 
 export default withSerwist({
-  output: 'export'
+  output: 'export',
+  basePath: "/EduRobot",
 });
