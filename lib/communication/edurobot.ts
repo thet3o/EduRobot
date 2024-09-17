@@ -42,7 +42,7 @@ export class EduRobot {
             direction == Direction.RIGHT){
                 res = await this.communication.sendCommand("move", Method.POST, {"direction": direction});
                 if(direction == Direction.LEFT || direction == Direction.RIGHT){
-                    this.delay(this.one_degree_in_ms*arg);
+                    this.delay(arg);
                 }else if(direction == Direction.FORWARD  || direction == Direction.BACKWARD){
                     //148 cm = 1.48 m     1.48 m : 2 s = 1 m : x s
                     this.delay(this.one_cm_in_ms*arg);
