@@ -21,7 +21,7 @@ export default function Editor({robot} : {robot: any}) {
 
     return (
         <div className="w-full">
-            <h1 className="text-2xl">Sequence Editor</h1>
+            <h1 className="text-2xl">Sequence Editor v0.1.2b</h1>
             <div className="flex flex-row m-1">
                 <button onClick={async () => await runner.executeSequence(sequence)} type="button" className="bg-green-500 rounded-lg p-2">
                     RUN
